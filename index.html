@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Elektra Go Lite Landing</title>
+</head>
+<style>
+    :root {
+        --principal: #243C56;
+        --grey: #545A5F;
+        --red: #DA291C;
+        --bg-grey: #EFF3F6;
+        --white: #ffff;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 16px;
+        /*1rem = 10px*/
+        font-family: "Poppins", sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: var(--bg-grey);
+    }
+
+    .startedSection {
+        display: flex;
+        /* background-image: url("Images/BG-Image.png"); */
+        background-repeat: no-repeat;
+        height: 780px;
+        background-size: cover;
+        background-position: center;
+        z-index: 100;
+        position: relative;
+    }
+
+    .bg-w{
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 6.5rem;
+        margin-bottom: 0;
+        color: var(--principal);
+    }
+
+    p {
+        font-size: 2rem;
+        color: var(--grey);
+        line-height: 30px;
+    }
+
+    p span {
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .lettersRight {
+        width: 60rem;
+        margin-left: 15rem;
+    }
+
+    .imgFondo{
+        position: absolute;
+        top: 0;
+    }
+
+    .downloadApps a:nth-child(1) {
+        margin-right: 2rem;
+    }
+
+    .login {
+        margin-top: 7.4rem;
+    }
+
+    .login a {
+        color: var(--red);
+        font-weight: 700;
+    }
+
+    .countries {
+        text-align: center;
+        background-color: var(--bg-grey);
+    }
+
+    .icon {
+        width: 7.6rem;
+    }
+
+    .countries .icon {
+        margin-top: 6.1rem;
+    }
+
+    .flags {
+        margin-top: 9.38rem;
+    }
+
+    .flags p {
+        margin-top: 3.5rem;
+        margin-bottom: 0;
+    }
+
+    .cardSection {
+        background: white;
+        border-radius: 0 0 50% 50% / 0 0 100% 100%;
+        height: 10vh;
+    }
+
+    .cardSection h1{
+        margin-block-start: 0;
+        padding-top: 5rem;
+    }
+
+    .but {
+        background-color: var(--bg-grey);
+    }
+</style>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="startedSection">
+            <article class="lettersRight">
+                <h1>
+                    Get started with Elektra Go Lite
+                </h1>
+                <p>Simplify your life with Elektra Go Lite.
+                    Easily send money to Mexico, Guatemala, and Honduras, pay
+                    bills, and reload phones, all in one convenient place. <br>
+                    <span>Download Elektra Go Lite now.</span>
+                </p>
+                <!-- Botones para descargar aplicaciones  -->
+                <div class="downloadApps">
+                    <a href="#">
+                        <img src="Images/GooglePlay.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="Images/AppStore.png" alt="">
+                    </a>
+                </div>
+                <p class="login">
+                    Already have an Elektra Go Lite account?
+                    <a href="#">Log In</a>
+                </p>
+            </article>
+        </section>
+        <img class="imgFondo" src="Images/BG-Image.png" alt="background-img">
+        <section class="countries">
+            <article class="bg-w">
+                <img class="icon" src="Images/icon_preguntas.png" alt="">
+                <h1>Send money in <span>3 easy steps</span></h1>
+                <div class="flags">
+                    <img src="Images/GroupFlags.png" alt="">
+                    <p>to Mexico, Honduras, and Guatemala with Elektra Go Lite</p>
+                </div>
+            </article>
+            <article class="cardSection">
+                <h1>Hola</h1>
+            </article>
+            <article class="but">
+                <button>Hola</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
