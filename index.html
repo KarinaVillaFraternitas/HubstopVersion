@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Elektra Go Lite Landing</title>
 </head>
 <style>
@@ -16,6 +18,7 @@
         --red: #DA291C;
         --bg-grey: #EFF3F6;
         --white: #ffff;
+        --blue: #4D6585;
     }
 
     html {
@@ -33,16 +36,21 @@
 
     .startedSection {
         display: flex;
-        /* background-image: url("Images/BG-Image.png"); */
         background-repeat: no-repeat;
         height: 780px;
         background-size: cover;
         background-position: center;
         z-index: 100;
-        position: relative;
+        position: absolute;
     }
 
-    .bg-w{
+    .sectionImg {
+        background-image: url("Images/BG-Image.png");
+        background-position: center bottom;
+        height: 110vh;
+    }
+
+    .bg-w {
         background-color: white;
     }
 
@@ -51,6 +59,26 @@
         line-height: 6.5rem;
         margin-bottom: 0;
         color: var(--principal);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 3.75rem;
+        color: var(--blue);
+    }
+
+    .paySection h2 {
+        font-size: 4.5rem;
+        line-height: 5.6rem;
+        font-weight: 700;
     }
 
     p {
@@ -67,14 +95,21 @@
         text-decoration: none;
     }
 
+    .mr-r {
+        margin-right: 5rem;
+    }
+
     .lettersRight {
         width: 60rem;
         margin-left: 15rem;
     }
 
-    .imgFondo{
-        position: absolute;
-        top: 0;
+    .lettersRight h1 {
+        margin-top: 15rem;
+    }
+
+    .imgFondo {
+        position: relative;
     }
 
     .downloadApps a:nth-child(1) {
@@ -97,14 +132,19 @@
 
     .icon {
         width: 7.6rem;
+        padding-bottom: 2rem;
     }
 
     .countries .icon {
         margin-top: 6.1rem;
     }
 
+    .countries article:nth-child(1) {
+        padding-bottom: 5em;
+    }
+
     .flags {
-        margin-top: 9.38rem;
+        margin-top: 7rem;
     }
 
     .flags p {
@@ -112,19 +152,130 @@
         margin-bottom: 0;
     }
 
+    .redColor {
+        color: var(--red);
+    }
+
     .cardSection {
         background: white;
         border-radius: 0 0 50% 50% / 0 0 100% 100%;
         height: 10vh;
+        padding-bottom: 9rem;
     }
 
-    .cardSection h1{
+    .cardSection h1 {
         margin-block-start: 0;
         padding-top: 5rem;
     }
 
+    .sectionCards {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionCards .card {
+        margin-bottom: 9rem;
+    }
+
+    .card {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .card {
+        max-width: 28.4rem;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    .card-body img {
+        padding-bottom: 2rem;
+    }
+
+    .card-body {
+        padding: 3rem 1rem 4rem;
+    }
+
+    section.countries>article.cardSection>div>div>div>p:nth-child(2) {
+        font-weight: 700;
+        color: var(--principal);
+    }
+
+    .card-body p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
     .but {
         background-color: var(--bg-grey);
+    }
+
+    .button-primary {
+        display: flex;
+        justify-content: center;
+        padding: 24px 32px;
+        background-color: var(--red);
+        border-radius: 50px;
+        align-items: center;
+    }
+
+    .button-primary p {
+        color: var(--white);
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+    }
+
+    .button-primary img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .btnRed {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 6rem;
+    }
+
+    .calculator {
+        padding-top: 8rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
+    }
+
+    .calculator h1 {
+        padding-top: 0;
+    }
+
+    .secondCal img {
+        max-width: 70rem;
+    }
+
+    body>main>section.countries>article.cardSection>div.calculator>div.firstCal>div>img {
+        width: 4.8rem;
+        margin-right: 2rem;
+    }
+
+    .firstCal {
+        text-align: left;
+        width: 41.6rem;
+    }
+
+    body>main>section.countries>article.cardSection>div.container.calculator>div>div.col-5>div>div>p {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .c-vertical {
+        align-items: center;
+    }
+
+    .card-sm {
+        padding: 10px;
+        text-align: left;
+        align-items: center;
+        justify-content: space-around;
     }
 </style>
 
@@ -136,7 +287,8 @@
         <section class="startedSection">
             <article class="lettersRight">
                 <h1>
-                    Get started with Elektra Go Lite
+                    Get started with <br>
+                    Elektra Go Lite
                 </h1>
                 <p>Simplify your life with Elektra Go Lite.
                     Easily send money to Mexico, Guatemala, and Honduras, pay
@@ -158,27 +310,207 @@
                 </p>
             </article>
         </section>
-        <img class="imgFondo" src="Images/BG-Image.png" alt="background-img">
+        <section class="sectionImg">
+        </section>
         <section class="countries">
             <article class="bg-w">
                 <img class="icon" src="Images/icon_preguntas.png" alt="">
-                <h1>Send money in <span>3 easy steps</span></h1>
+                <h2>Send money in <span>3 easy steps</span></h2>
                 <div class="flags">
                     <img src="Images/GroupFlags.png" alt="">
                     <p>to Mexico, Honduras, and Guatemala with Elektra Go Lite</p>
                 </div>
             </article>
             <article class="cardSection">
-                <h1>Hola</h1>
+                <div class="sectionCards">
+                    <div class="card mr-r">
+                        <div class="card-body">
+                            <img src="Images/Number1.png" alt="">
+                            <p>Create an Elektra Go Lite account or log in</p>
+                            <p>Download the app or log in on our website.</p>
+                        </div>
+                    </div>
+                    <div class="card mr-r">
+                        <div class="card-body">
+                            <img src="Images/Number (1).png" alt="">
+                            <p>Add or select a receiver and a payment method</p>
+                            <p>Get a preferred exchange rate when you pay using a bank account.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/Number.png" alt="">
+                            <p>Enter the amount and  pay for your transfer</p>
+                            <p>Competitive exchange rates and low fees. Money-back guarantee on all your transfers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnRed">
+                    <a class="button-primary" href="#">
+                        <p>Send money now</p>
+                        <img src="Images/Forward Arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="container calculator">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="ml-5 firstCal">
+                                <h1>Check our</h1>
+                                <h1 class="redColor">calculator</h1>
+                                <div class="d-flex c-vertical mt-5">
+                                    <img src="Images/vector5.png" alt="">
+                                    <h3>1 USD = 16.93 MXN</h3>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 700;">Competitive exchange rate on every transfer.</p>
+                                    <p>Choose your preferred payment method (Debit, Credit, ACH)
+                                        and start sending though the app or online.</p>
+                                    <p>Your recipient can receive their transfer using any Elektra
+                                        and Banco Azteca channel.</p>
+                                </div>
+                                <div class="btnRed justify-content-start mt-5 mb-5">
+                                    <a class="button-primary" href="#">
+                                        <p>Check now</p>
+                                        <img src="Images/Forward Arrow.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="secondCal">
+                                <img src="Images/calculadora.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paySection bg-w">
+                    <h1 class="mb-5">Pay bills in México</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="card mb-4">
+                                            <div class="card-body d-flex card-sm">
+                                                <img src="Images/icon_quick.png" alt="">
+                                                <p>Select a service in <br>
+                                                    Mexico</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-4">
+                                            <div class="card-body d-flex card-sm">
+                                                <img src="Images/icon_SSN.png" alt="">
+                                                <p>Enter <br>
+                                                    recipients info</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body d-flex card-sm">
+                                                <img src="Images/icon_page.png" alt="">
+                                                <p>Enter the amount and pay for your service</p>
+                                            </div>
+                                        </div>
+                                        <p>Select a service in Mexico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <img src="Images/foto (2).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-w">
+                    <h2>Pay bills for the following companies</h2>
+                    <img src="Images/Contentsd.png" alt="">
+                    <h4>Bills paid within 2 business days. Only $2.99/bill.</h4>
+                    <div class="btnRed">
+                        <a class="button-primary" href="#">
+                            <p>Pay bills now</p>
+                            <img src="Images/Forward Arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-7">
+                            <img src="Images/img_hand_mobile.png" alt="">
+                        </div>
+                        <div class="col-5">
+                            <h1>Reload phones</h1>
+                            <h1>in México</h1>
+                            <div class="d-flex">
+                                <img src="Images/icon_quick.png" alt="">
+                                <p>Select a carrier and enter your receiver’s name and mobile number</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="Images/icon.deposit.png" alt="">
+                                <p>Select a carrier and enter your receiver’s name and mobile number</p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="Images/icon_page.png" alt="">
+                                <p>Select a carrier and enter your receiver’s name and mobile number</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Reload phones for the following companies:</h2>
+                            <!-- <div class="d-flex">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                    </div>
+                                </div>
+                            </div> -->
+                            <img src="/Images/Logos.png" alt="">
+                            <h3>
+                                Reload prepaid phones instantly for $0.99
+                            </h3>
+                            <div class="btnRed">
+                                <a class="button-primary" href="#">
+                                    <p>Reload phones now</p>
+                                    <img src="Images/Forward Arrow.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+
+                                </div>
+                                <div class="col-6">
+                                    <h1>Why Elektra Go Lite?</h1>
+                                    <ul>
+                                        <li>Transfer money to Mexico, Honduras and Guatemala.</li>
+                                        <li>Pay bills in Mexico for only $2.99.</li>
+                                        <li>Reload phones for $.99.</li>
+                                        <li>24/7 support.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>Already have an Elektra Go Lite account?</h2>
+                                <div class="btnRed">
+                                    <a class="button-primary" href="#">
+                                        <p>Send money now</p>
+                                        <img src="Images/Forward Arrow.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
-            <article class="but">
-                <button>Hola</button>
-            </article>
+
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
